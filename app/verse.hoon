@@ -62,8 +62,8 @@
             [%verse %study ~]
           =-  [[302 ['location' -]~] ~]
           %^  cat  3
-            'https://www.catholiccrossreference.online/fathers/index.php/'
-          (crip (cass index))
+            'https://catenabible.com/'
+          (crip (cass cantena-index))
         ::
             [%verse %verse ~]
           =;  svg
@@ -118,6 +118,11 @@
       =+  (chapter ci)
       =.  book  (~(got by titles:word) book)
       "{(trip book)} {(scow %ud +(local))}:{(scow %ud +(vi))}"
+    ::
+    ++  cantena-index  ~+
+      =+  (chapter ci)
+      =.  book  (~(got by titles:word) book)
+      "{(trip (~(got by titles-to-url:word) book))}/{(scow %ud +(local))}/{(scow %ud +(vi))}"
     ::
     ++  weight  ^~  ::  verses per chapter
       =+  a=linear:word
